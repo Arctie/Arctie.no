@@ -95,16 +95,18 @@ body {
 /*3D Portfolio*/
 .portfolioLayout {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    
+
 }
 
 .portfolioItem img {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 20rem;
     flex-basis: auto;
     object-fit: cover;
+    padding: 0.1rem;
+    border-radius: 2rem;
 }
 
 /*2D Portfolio*/

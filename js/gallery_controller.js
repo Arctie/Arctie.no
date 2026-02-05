@@ -1,12 +1,18 @@
 //populate as you add more to the Pictures folder! alt is alt text
 
 const threeImages = [
-{src: 'Assets/Pictures/three/ModelShowcase1.png', alt: 'model', title: 'model'}, 
-{src: 'Assets/Pictures/three/ORB1.png', alt: 'model', title: 'model'}, 
-{src: 'Assets/Pictures/three/ORB2.png', alt: 'orb', title: 'orb'}, 
-{src: 'Assets/Pictures/three/ORB3.png', alt: 'orb', title: 'orb'}, 
-{src: 'Assets/Pictures/three/ORB4.png', alt: 'orb', title: 'orb'}, 
-{src: 'Assets/Pictures/three/ORB5.png', alt: 'orb', title: 'orb'}
+    {src: 'Assets/Pictures/three/ModelShowcase1.png', alt: 'model', title: 'model'}, 
+    {src: 'Assets/Pictures/three/ORB1.png', alt: 'model', title: 'model'}, 
+    {src: 'Assets/Pictures/three/ORB2.png', alt: 'orb', title: 'orb'}, 
+    {src: 'Assets/Pictures/three/ORB3.png', alt: 'orb', title: 'orb'}, 
+    {src: 'Assets/Pictures/three/ORB4.png', alt: 'orb', title: 'orb'}, 
+    {src: 'Assets/Pictures/three/ORB5.png', alt: 'orb', title: 'orb'},
+    {src: 'Assets/Pictures/three/Bag.png', alt: 'Bag', title: 'orb'},
+    {src: 'Assets/Pictures/three/Heart.png', alt: 'Heart', title: 'orb'},
+    {src: 'Assets/Pictures/three/Hermes.png', alt: 'Hermes', title: 'orb'},
+    {src: 'Assets/Pictures/three/Lava Charm.png', alt: 'Lava Charm', title: 'orb'},
+    {src: 'Assets/Pictures/three/Mirror.png', alt: 'Magic Mirror', title: 'orb'},
+    {src: 'Assets/Pictures/three/Tinkerers.png', alt: 'Tinkerers Table', title: 'orb'}
 
 ]
 const twoImages = [
