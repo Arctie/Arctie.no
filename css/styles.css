@@ -5,9 +5,6 @@ a {
 body {
     background-color: #292E36;
 }
-h5 {
-
-}
 .header {
     position: fixed;
     top: 0;
@@ -78,6 +75,15 @@ h5 {
     padding: 20rem ;
 }
 
+.areaTitle {
+    display: flex;
+    justify-content: center;
+    font-family: 'Martian Mono';
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #9AA6B9;
+}
+
 .downButton {
     display: flex;
     justify-content: center;
@@ -87,13 +93,18 @@ h5 {
     stroke: #ffffff;
 }
 /*3D Portfolio*/
-.areaTitle {
+.portfolioLayout {
     display: flex;
     justify-content: center;
-    font-family: 'Martian Mono';
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: #9AA6B9;
+    align-items: center;
+    
+}
+
+.portfolioItem img {
+    width: 100%;
+    height: auto;
+    flex-basis: auto;
+    object-fit: cover;
 }
 
 /*2D Portfolio*/
