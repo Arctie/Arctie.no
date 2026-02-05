@@ -5,6 +5,15 @@ a {
 body {
     background-color: #292E36;
 }
+h5 {
+
+}
+.header {
+    position: fixed;
+    top: 0;
+    width: 99%;
+    z-index: 1000;
+}
 
 .container {
     display: flex;
@@ -31,6 +40,7 @@ body {
     border-radius: 2rem;
 
 }
+
 .box:hover{
     background: radial-gradient(
         circle at 80% 0%,
@@ -42,13 +52,14 @@ body {
 }
 
 .divider {
-    margin: 32px 0px 18px;
+    margin: 10px 0px 0px;
     height: 1px;
     background: linear-gradient(
         to right, transparent, #fff, transparent
     );
     opacity: 0.2;
 }
+
 
 .align {
     display: flex;
@@ -70,36 +81,80 @@ body {
 .downButton {
     display: flex;
     justify-content: center;
-    
-
 }
-
-
-/*
-.downButtonLink{
-    background: radial-gradient(
-        circle at 80% 0%,
-        #495362, 
-        #3c4456 40%,
-        transparent 90%
-        
-    );
-    border: 0.5px solid #666877;
-    gap: 10px;
-    padding: 0.1em 0.1em 0.1em;
-    border-radius: 2rem;
-}
-
-.downButtonLink:hover {
-    background: radial-gradient(
-        circle at 80% 0%,
-        #e06844, 
-        #3a2216 70%,
-        #270219 90%        
-    );
-}
-*/
 
 .downButtonLink:hover .downButtonArrow{
     stroke: #ffffff;
 }
+/*3D Portfolio*/
+.areaTitle {
+    display: flex;
+    justify-content: center;
+    font-family: 'Martian Mono';
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #9AA6B9;
+}
+
+/*2D Portfolio*/
+
+/*FORUM*/
+
+
+.forumLayout{
+    display: flex;
+    
+    gap: 2rem;
+    background: #3A414D;
+    padding: 2rem;
+    border-radius: 2rem;
+    margin: 2rem auto;
+    width: auto;
+    max-width: 100ch;
+    font-family: 'Martian Mono';
+}
+
+.forumLayout > div:first-child {
+    flex: 1;
+}
+
+.inForumDate {
+    margin-left: auto;
+    white-space: nowrap;
+    color: #667988;
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: right;
+}
+
+.inForumTitle {
+    color: #9AA6B9; 
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+
+.inForumDescription {
+
+    font-size: 1rem;
+    font-weight: 300;
+    color: #828C9D;
+    margin: 1rem 0 1rem 0;
+    max-width: 80ch;    
+}
+
+.bylineReplies{
+    display: flex;
+    gap: 2em;
+    color: #667988;  
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 0.1rem;
+ 
+}
+
+
+
+
+
