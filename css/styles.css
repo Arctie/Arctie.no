@@ -1,0 +1,105 @@
+
+a {
+    text-decoration: none;
+}
+body {
+    background-color: #292E36;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.box {
+    background: radial-gradient(
+        circle at 80% 0%,
+        #495362, 
+        #3c4456 40%,
+        transparent 90%
+        
+    );
+    border: 0.5px solid #666877;
+
+    font-family: 'Martian Mono';
+    font-size: 1rem;
+    font-weight: 500;
+    color: #9AA6B9;
+    gap: 10px;
+    padding: 0.1em 2em 0.1em;
+    border-radius: 2rem;
+
+}
+.box:hover{
+    background: radial-gradient(
+        circle at 80% 0%,
+        #e06844, 
+        #3a2216 70%,
+        #270219 90%        
+    );
+    color: #fffcbe;
+}
+
+.divider {
+    margin: 32px 0px 18px;
+    height: 1px;
+    background: linear-gradient(
+        to right, transparent, #fff, transparent
+    );
+    opacity: 0.2;
+}
+
+.align {
+    display: flex;
+    gap: 1em;
+}
+
+
+
+.hello_world{
+    display: flex;
+    justify-content: center;
+    font-family: 'Martian Mono';
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #9AA6B9;    
+    padding: 20rem ;
+}
+
+.downButton {
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+
+/*
+.downButtonLink{
+    background: radial-gradient(
+        circle at 80% 0%,
+        #495362, 
+        #3c4456 40%,
+        transparent 90%
+        
+    );
+    border: 0.5px solid #666877;
+    gap: 10px;
+    padding: 0.1em 0.1em 0.1em;
+    border-radius: 2rem;
+}
+
+.downButtonLink:hover {
+    background: radial-gradient(
+        circle at 80% 0%,
+        #e06844, 
+        #3a2216 70%,
+        #270219 90%        
+    );
+}
+*/
+
+.downButtonLink:hover .downButtonArrow{
+    stroke: #ffffff;
+}
