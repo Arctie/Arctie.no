@@ -71,24 +71,24 @@
                 <p>forum</p> 
             </div>
 
-            <div class="forumLayout">
-                <div>
-                    <h2 class="inForumTitle">Random bullshit that facinates me!</h2>
-                    
-                    <p class="inForumDescription">
-                        So i kinda found a new way to create bullshit that is kinda fascinating and i wanna share it with all you wierdoes!
-                    </p>
-                
-                    <div class="bylineReplies">
-                    <p>By fen </p> 
-                    <p>8 Replies</p> 
-                    </div>
-                    
-                </div>
-                <div>
-                    <p class="inForumDate">feb 5, 2026</p>
-                </div>
-            </div>
+            <forum-preview
+                title="Web components for these forum previews!!"
+                description="For this page i decided to use webComponents written in JS to create the layout and then i used some variables to fill it out, something that made it super easy to create all the details needed for the forum preview!! its kinda epic ngl"
+                author="fen"
+                replies="0"
+                date="Feb 6, 2026">
+            </forum-preview>
+
+            <forum-preview
+                title="title"
+                description="description"
+                author="fen"
+                replies="0"
+                date="any date">
+            </forum-preview>
+
+            
+
         </div>
 
         <div id="contact">
@@ -100,5 +100,6 @@
             </div>
         </div>
         <script src="js\gallery_controller.js"></script>
+        <script src="js\forumComponent.js"></script>
     </body>
 </html>
