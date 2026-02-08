@@ -179,7 +179,7 @@ body {
 /*mobile view*/
 @media (max-width:768px){
     .portfolioItem img{
-        height:9rem
+        height:8rem
     }
     .inForumTitle{
         font-size: 1rem;
