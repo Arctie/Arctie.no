@@ -67,15 +67,14 @@ body {
 
 
 .hello_world{
-    display: flex;
-    justify-content: center;
+
     font-family: 'Martian Mono';
     font-size: 1.5rem;
     font-weight: 500;
     color: #9AA6B9;    
-    padding: 20rem ;
+    margin: 50vh auto 38vh;
+    max-width:max-content;
 }
-
 .areaTitle {
     display: flex;
     justify-content: center;
@@ -109,6 +108,7 @@ body {
     padding: 0.1rem;
     border-radius: 2rem;
 }
+
 
 /*2D Portfolio*/
 
@@ -176,3 +176,21 @@ body {
 }
 
 
+/*mobile view*/
+@media (max-width:768px){
+    .portfolioItem img{
+        height:9rem
+    }
+    .inForumTitle{
+        font-size: 1rem;
+    }
+    .inForumDescription{
+        font-size: 0.8rem;
+    }
+    .bylineReplies {
+        font-size: 0.8rem;
+    }
+    .inForumDate{
+        font-size: 0.8rem;
+    }
+}
