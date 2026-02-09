@@ -1,10 +1,22 @@
 class ForumPreview extends HTMLElement {
+    static get observedAttributes() {
+        return ['title', 'description', 'author', 'replies', 'date'];
+    }
+
     connectedCallback() {
-        const title = this.getAttribute("title");
-        const description = this.getAttribute("description");
-        const author = this.getAttribute("author");
-        const replies = this.getAttribute("replies");
-        const date = this.getAttribute("date");
+        this.update();
+    }
+
+    attributeChangedCallback() {
+        this.update();
+    }
+
+    update() {
+        const title = this.getAttribute("title") || "";
+        const description = this.getAttribute("description") || "";
+        // const replies = this.getAttribute("replies"); // kept for future use
+        const author = this.getAttribute("author") || "";
+        const date = this.getAttribute("date") || "";
 
         this.innerHTML = `
             <div class="forumLayout">
@@ -13,7 +25,6 @@ class ForumPreview extends HTMLElement {
                     <p class="inForumDescription">${description}</p>
                     <div class="bylineReplies">
                         <p>By ${author}</p>
-                        <p>${replies} Replies</p>
                     </div>
                 </div>
                 <div>

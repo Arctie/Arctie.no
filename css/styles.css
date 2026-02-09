@@ -1,15 +1,29 @@
 
+
+
+:root {
+    --bg: #292E36;
+    --muted: #9AA6B9;
+    --muted-2: #828C9D;
+    --panel: #3A414D;
+    --accent: #e06844;
+}
+
 a {
     text-decoration: none;
 }
+
 body {
-    background-color: #292E36;
+    background-color: var(--bg);
+    font-family: 'Martian Mono', Roboto, sans-serif;
+    color: var(--muted);
 }
 .header {
     position: fixed;
     padding-top: 0.5rem;
     top: 0;
-    width: 99%;
+    left: 0;
+    right: 0;
     z-index: 1000;
 }
 
@@ -28,8 +42,6 @@ body {
         
     );
     border: 0.5px solid #666877;
-
-    font-family: 'Martian Mono';
     font-size: 1rem;
     font-weight: 500;
     color: #9AA6B9;
@@ -66,9 +78,11 @@ body {
 
 
 
+
+
 .hello_world{
 
-    font-family: 'Martian Mono';
+
     font-size: 1.5rem;
     font-weight: 500;
     color: #9AA6B9;    
@@ -78,12 +92,18 @@ body {
 .areaTitle {
     display: flex;
     justify-content: center;
-    font-family: 'Martian Mono';
     font-size: 1.5rem;
     font-weight: 500;
     color: #9AA6B9;
 }
 
+.areaDescription {
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #9AA6B9;
+}
 .downButton {
     display: flex;
     justify-content: center;
@@ -114,6 +134,12 @@ body {
 
 /*FORUM*/
 
+#forum {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .forumLayout{
     display: flex;
     
@@ -124,7 +150,7 @@ body {
     margin: 2rem auto;
     width: auto;
     max-width: 100ch;
-    font-family: 'Martian Mono';
+
 }
 
 .forumLayout > div:first-child {
@@ -170,14 +196,46 @@ body {
 /*CONTACT*/
 .contactStyling {
     display: flex;
-    font-family: 'Martian Mono';
+
     justify-content: center;
     color: #8d6cae;
 }
 
 
-/*mobile view*/
+/*mobile*/
 @media (max-width:768px){
+
+    .align {
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+        align-items: flex-end;
+    }
+    
+    .divider{
+        opacity: 0;
+    }
+
+
+    .box {
+        
+        border: 0px;
+        border-bottom: 0.5px solid #666877;
+        background: 0 ;
+        padding: 0.1em 0.5em;
+        width: fit-content;
+
+    }
+
+    .box:hover{
+        background: var(--panel);
+    }
+
+    .align .box p {
+        margin: 0.2rem;
+
+    }
+
     .portfolioItem img{
         height:8rem
     }
