@@ -3,7 +3,11 @@
 const threeImages = [
     {src: 'Assets/Pictures/three/ModelShowcase1.png', alt: 'model', title: 'model'}, 
     {src: 'Assets/Pictures/three/ORB1.png', alt: 'model', title: 'model'}, 
+    {src: "Assets/Pictures/three/Render 1.png", alt: "Render 1", title: "Render 1" },
+    {src: "Assets/Pictures/three/Render 2.png", alt: "Render 2", title: "Render 2" },
     {src: 'Assets/Pictures/three/ORB2.png', alt: 'orb', title: 'orb'}, 
+    {src: "Assets/Pictures/three/Tiles Render 1.png", alt: "Tiles Render 1", title: "Tiles Render 1" },
+    {src: "Assets/Pictures/three/Tiles Render 4.png", alt: "Tiles Render 4", title: "Tiles Render 4" },
     {src: 'Assets/Pictures/three/ORB3.png', alt: 'orb', title: 'orb'}, 
     {src: 'Assets/Pictures/three/ORB4.png', alt: 'orb', title: 'orb'}, 
     {src: 'Assets/Pictures/three/ORB5.png', alt: 'orb', title: 'orb'},
@@ -13,7 +17,6 @@ const threeImages = [
     {src: 'Assets/Pictures/three/Lava Charm.png', alt: 'Lava Charm', title: 'orb'},
     {src: 'Assets/Pictures/three/Mirror.png', alt: 'Magic Mirror', title: 'orb'},
     {src: 'Assets/Pictures/three/Tinkerers.png', alt: 'Tinkerers Table', title: 'orb'}
-
 ]
 const twoImages = [
     {src: 'Assets/Pictures/two/Dergonpanceek.png', alt: 'model', title: 'model'},
