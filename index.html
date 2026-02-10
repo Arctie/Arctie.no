@@ -25,8 +25,8 @@
                         <a href="#2D">
                             <div class="box"><p>2d</p></div>
                         </a>
-                        <a href="#forum">
-                            <div class="box"><p>forum</p></div>
+                        <a href="#blog">
+                            <div class="box"><p>blog</p></div>
                         </a>
                         <a href="#contact">
                             <div class="box"><p>contact</p></div>
@@ -72,42 +72,45 @@
 
             </div>
         </div>
-        <div id="forum" >
+        <div id="blog" >
             <div class="areaTitle"> 
-                <p>forum</p> 
+                <p>blog</p> 
             </div>
 
             <forum-preview
                 title="Web components for these forum previews!!"
-                
                 author="fen"
                 replies="0"
                 date="Feb 6, 2026">
-                <div slot="description"> 
+                <div slot="description" class="inForumDescription"> 
                     <p>
                         For this page i decided to use webComponents written in JS to create the layout and then i used some variables to fill it out, something that made it super easy to create all the details needed for the forum preview!! its kinda epic ngl
                     </p>
+                    <p>
+                        only problem to be completely honest is that i have done things in a very sub optimal way, so it is a little trash, especially the part that creates these blog posts, cuz it is a static page so i have no way of uploading a piece of text to be shown in one of these posts, so i just write pure html for each of these litle boxes! its kinda wonk! 
+                    </p>
                 </div>
             </forum-preview>
-            <forum-preview
-                title="tiny title"
-                
-                author="fen"
-                replies="0"
-                date="any date" >
-                <div slot="description"> 
-
-                </div>
-            </forum-preview>
+        
             
             <forum-preview
-                title="Another forum post to test some systems and a brutally long title to be a little annoying"
+                title="Heyyaaa! welcome to my lil corner of the web :3"
                 
                 author="fen"
                 replies="0"
                 date="Feb 9, 2026" >
-                <div slot="description"> 
-
+                <div slot="description" class="inForumDescription"> 
+                    <p>
+                        heyyaaa! i am fen, <br>
+                        this is my little wonky ahh webpage where i will show off some of my 3d work and ill make some tutorials in these forum esque posts, they are very wonky right now as this page is static! 
+                    </p>
+                    <div class="portfolioLayout">
+                        <img src="Assets/Pictures/three/ORB1.png" alt="test" class="imgScale">
+                        <img src="Assets/Pictures/three/ORB3.png" alt="test" class="imgScale">
+                    </div>
+                    <p>
+                        these are some of my proc gen materials in blender! one is inspired by a proc gen brick shader i found, but idk where i found it! the other is a raymarcher! ()
+                    </p>
                 </div>
             </forum-preview>
 

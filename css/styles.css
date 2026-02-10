@@ -34,14 +34,8 @@ body {
 }
 
 .box {
-    background: radial-gradient(
-        circle at 80% 0%,
-        #495362, 
-        #3c4456 40%,
-        transparent 90%
-        
-    );
-    border: 0.5px solid #666877;
+    background: var(--bg);
+    border-bottom: 0.5px solid #666877;
     font-size: 1rem;
     font-weight: 500;
     color: #9AA6B9;
@@ -52,12 +46,7 @@ body {
 }
 
 .box:hover{
-    background: radial-gradient(
-        circle at 80% 0%,
-        #e06844, 
-        #3a2216 70%,
-        #270219 90%        
-    );
+    background: var(--panel);
     color: #fffcbe;
 }
 
@@ -192,7 +181,9 @@ body {
     margin-bottom: 0.1rem;
  
 }
-
+.imgScale {
+    height: 20rem;
+}
 /*CONTACT*/
 .contactStyling {
     display: flex;
@@ -213,6 +204,7 @@ body {
     }
     
     .divider{
+        
         opacity: 0;
     }
 
@@ -221,8 +213,8 @@ body {
         
         border: 0px;
         border-bottom: 0.5px solid #666877;
-        background: 0 ;
-        padding: 0.1em 0.5em;
+        background: var(--bg) ;
+        padding: 0.5em 0.5em;
         width: fit-content;
 
     }
@@ -244,6 +236,9 @@ body {
     }
     .inForumDescription{
         font-size: 0.8rem;
+    }
+    .imgScale {
+        height: 8rem;
     }
     .bylineReplies {
         font-size: 0.8rem;
