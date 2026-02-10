@@ -13,8 +13,8 @@ class ForumPreview extends HTMLElement {
 
     update() {
         const title = this.getAttribute("title") || "";
-        const description = this.getAttribute("description") || "";
-        // const replies = this.getAttribute("replies"); // kept for future use
+        // const description = this.getAttribute("description") || "";
+        // const replies = this.getAttribute("replies"); 
         const author = this.getAttribute("author") || "";
         const date = this.getAttribute("date") || "";
 
@@ -22,7 +22,9 @@ class ForumPreview extends HTMLElement {
             <div class="forumLayout">
                 <div>
                     <h2 class="inForumTitle">${title}</h2>
-                    <p class="inForumDescription">${description}</p>
+                    <div class="inForumDescription">
+                        <slot name="description"></slot>
+                    </div>
                     <div class="bylineReplies">
                         <p>By ${author}</p>
                     </div>
