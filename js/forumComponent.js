@@ -9,11 +9,19 @@ class ForumPreview extends HTMLElement {
         this.attachShadow({ mode: "open" }); //forum css should exist here! 
         this.shadowRoot.innerHTML = `
             <style>
-                                
+                             
                 #forum {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
+                }
+                .divider {
+                    margin: 0.5rem 0px 0px;
+                    height: 1.5px;
+                    background: linear-gradient(
+                        to right, transparent, #667988 , transparent
+                    );
+                    opacity: 0.2;
                 }
 
                 .forumLayout{
@@ -29,13 +37,9 @@ class ForumPreview extends HTMLElement {
 
                 }
 
-                .forumLayout > div:first-child {
-                    flex: 1;
-                }
-
                 .inForumDate {
                     margin-left: auto;
-                    white-space: nowrap;
+                    
                     color: #667988;
                     font-size: 1rem;
                     font-weight: 300;
@@ -56,7 +60,7 @@ class ForumPreview extends HTMLElement {
                     font-weight: 300;
                     color: #828C9D;
                     margin: 1rem 0 1rem 0;
-                    max-width: 80ch;    
+                        
                 }
 
                 .bylineReplies{
@@ -69,57 +73,53 @@ class ForumPreview extends HTMLElement {
                 
                 }
                 @media (max-width:768px){
-                .align {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 0.2rem;
-                    align-items: flex-end;
-                }
-                
-                .divider{
+                    .align {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0.2rem;
+                        align-items: flex-end;
+                    }
                     
-                    opacity: 0;
-                }
 
 
-                .box {
-                    
-                    border: 0px;
-                    border-bottom: 0.5px solid #666877;
-                    background: var(--bg) ;
-                    padding: 0.5em 0.5em;
-                    width: fit-content;
+                    .box {
+                        
+                        border: 0px;
+                        border-bottom: 0.5px solid #666877;
+                        background: var(--bg) ;
+                        padding: 0.5em 0.5em;
+                        width: fit-content;
 
-                }
+                    }
 
-                .box:hover{
-                    background: var(--panel);
-                }
+                    .box:hover{
+                        background: var(--panel);
+                    }
 
-                .align .box p {
-                    margin: 0.2rem;
+                    .align .box p {
+                        margin: 0.2rem;
 
-                }
+                    }
 
-                .portfolioItem img{
-                    height:8rem
+                    .portfolioItem img{
+                        height:8rem
+                    }
+                    .inForumTitle{
+                        font-size: 1rem;
+                    }
+                    .inForumDescription{
+                        font-size: 0.8rem;
+                    }
+                    .imgScale {
+                        height: 8rem;
+                    }
+                    .bylineReplies {
+                        font-size: 0.8rem;
+                    }
+                    .inForumDate{
+                        font-size: 0.8rem;
+                    }
                 }
-                .inForumTitle{
-                    font-size: 1rem;
-                }
-                .inForumDescription{
-                    font-size: 0.8rem;
-                }
-                .imgScale {
-                    height: 8rem;
-                }
-                .bylineReplies {
-                    font-size: 0.8rem;
-                }
-                .inForumDate{
-                    font-size: 0.8rem;
-                }
-            }
 
             </style>
             <div class="forumLayout">
@@ -128,13 +128,13 @@ class ForumPreview extends HTMLElement {
                     <div class="inForumDescription">
                         <slot name="description"></slot>
                     </div>
+                    <div class="divider"></div>
                     <div class="bylineReplies">
                         <p class="byline"></p>
+                        <p class="inForumDate"></p>
                     </div>
                 </div>
-                <div>
-                    <p class="inForumDate"></p>
-                </div>
+
             </div>
         `;
     }
