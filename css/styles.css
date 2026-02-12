@@ -58,7 +58,14 @@ body {
     );
     opacity: 0.2;
 }
-
+.dividerBot {
+    margin: 2rem 0px 0px;
+    height: 1px;
+    background: linear-gradient(
+        to right, transparent, #fff, transparent
+    );
+    opacity: 0.2;
+}
 
 .align {
     display: flex;
@@ -195,18 +202,43 @@ canvas {
 .imgScale {
     height: 15rem;
 }
+
 /*CONTACT*/
 .contactStyling {
     display: flex;
     gap: 2em;
     justify-content: center;
-    color: #8d6cae;
+
+}
+.contactItemStyling {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 10rem;
+    height: 10rem;
+}
+.contactInfoText {
+    display: none;
+
 }
 
 .contactItemStyling:hover {
     background: var(--panel);
     border-radius: 2rem;
+    
 }
+
+.contactItemStyling:hover img{
+    height: 7rem;
+}
+
+.contactItemStyling:hover .contactInfoText{
+    display:block;
+    color: var(--muted);
+}
+
 
 /*mobile*/
 @media (max-width:768px){
@@ -261,4 +293,29 @@ canvas {
     .inForumDate{
         font-size: 0.8rem;
     }
+
+    .contactItemStyling {
+        height: 5rem;
+        width: 5rem;
+        border-radius: 1rem;
+        background: var(--panel);
+
+    }
+    .contactInfoText {
+        display: block;
+        color: var(--muted);
+        font-size: 0.5rem;
+    }
+    .contactItemStyling:hover {
+        border-radius: 1.5rem;
+        background: #313742;
+    }
+    .contactItemStyling img {
+        height: 3rem;
+
+    }
+    .contactItemStyling:hover img{
+        height: 3rem;
+    }    
+
 }
