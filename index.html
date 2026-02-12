@@ -23,7 +23,7 @@
                     <div>
 
                         <a href="#" class="collapse" aria-expanded="false" aria-controls="navAlign">
-                            <div class="box"><p>=</p></div>
+                            <div class="box"><p>open</p></div>
                         </a>
 
                         <div class="align">
@@ -182,15 +182,21 @@
         <script src="js/gallery_controller.js"></script>
         <script src="js/forumComponent.js"></script>
         <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                var collapse = document.querySelector('.collapse');
-                var align = document.querySelector('.align');
+            document.addEventListener("DOMContentLoaded", function () {
+                var collapse = document.querySelector(".collapse");
+                var align = document.querySelector(".align");
+                var label = collapse.querySelector(".box p")
+
                 if (!collapse || !align) return;
-                collapse.addEventListener('click', function (e) {
+
+                collapse.addEventListener("click", function (e) {
                     e.preventDefault();
-                    align.classList.toggle('expanded');
+                    
+                    align.classList.toggle("expanded");
                     var expanded = align.classList.contains('expanded');
-                    collapse.setAttribute('aria-expanded', expanded);
+
+                    collapse.setAttribute("aria-expanded", expanded);
+                    label.textContent = expanded ? "close" : "open" ;
                 });
             });
         </script>
