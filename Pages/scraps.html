@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>fen</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/css/styles.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+
+    </head>
+    <body>
+        <div class="header">
+            <div class="container">
+                <a href="../index.html">
+                <div class="box"><p>arctie.no</p></div>
+                </a> 
+                <div>
+                    <a href="#" class="collapse" aria-expanded="false" aria-controls="navAlign">
+                        <div class="box"><p>=</p></div>
+                    </a>
+                    <div class="align">
+                        <a href="../index.html#3D">
+                            <div class="box"><p>3d</p></div>
+                        </a>
+                        <a href="../index.html#2D">
+                            <div class="box"><p>2d</p></div>
+                        </a>
+                        <a href="#">
+                            <div class="box"><p>scraps</p></div>
+                        </a>
+                        <a href="../index.html#blog">
+                            <div class="box"><p>blog</p></div>
+                        </a>
+                        <a href="../index.html#contact">
+                            <div class="box"><p>contact</p></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="divider"></div>
+        </div>
+        <p class="hello_world">
+            this is the scraps page 
+            <br> here i will but alot of my more janky sketches, and such!
+        </p>
+
+        <script src="js/gallery_controller.js"></script>
+        <script src="js/forumComponent.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var collapse = document.querySelector('.collapse');
+                var align = document.querySelector('.align');
+                if (!collapse || !align) return;
+                collapse.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    align.classList.toggle('expanded');
+                    var expanded = align.classList.contains('expanded');
+                    collapse.setAttribute('aria-expanded', expanded);
+                });
+            });
+        </script>
+    </body>

@@ -72,13 +72,17 @@ body {
     gap: 1em;
 }
 
+.collapse {
+    display: none;
+}
+
 
 
 
 
 .hello_world{
 
-
+    text-align: center;
     font-size: 1.5rem;
     font-weight: 500;
     color: #9AA6B9;    
@@ -243,11 +247,29 @@ canvas {
 /*mobile*/
 @media (max-width:768px){
 
+    /* collapsed by default on mobile; toggled by JS via .expanded */
     .align {
+        display: none;
+    }
+
+    .align.expanded {
         display: flex;
         flex-direction: column;
         gap: 0.2rem;
         align-items: flex-end;
+    }
+
+    .collapse {
+        display: block;
+        margin-left: auto;
+        text-decoration: none;
+
+        width: fit-content;
+    }
+    .collapse .box p {
+        margin: 0;
+        font-size: 1.5rem;
+        line-height: 0.8;
     }
     
     .divider{
