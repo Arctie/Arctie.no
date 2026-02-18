@@ -94,15 +94,15 @@
         <script src="/js/gallery_controller.js"></script>
         <script src="/js/forumComponent.js"></script>
         <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                var collapse = document.querySelector('.collapse');
-                var align = document.querySelector('.align');
+            document.addEventListener("DOMContentLoaded", function () {
+                var collapse = document.querySelector(".collapse");
+                var align = document.querySelector(".align");
                 if (!collapse || !align) return;
-                collapse.addEventListener('click', function (e) {
+                collapse.addEventListener("click", function (e) {
                     e.preventDefault();
-                    align.classList.toggle('expanded');
-                    var expanded = align.classList.contains('expanded');
-                    collapse.setAttribute('aria-expanded', expanded);
+                    align.classList.toggle("expanded");
+                    var expanded = align.classList.contains("expanded");
+                    collapse.setAttribute("aria-expanded", expanded);
                 });
             });
         </script>

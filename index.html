@@ -1,206 +1,306 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  </head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>fen</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/styles.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <body>
+    <div class="header">
+      <div class="container">
+        <a href="#">
+          <div class="box"><p>arctie.no</p></div>
+        </a>
 
-
-    </head>
-    <body>
-        <div class="header">
-            <div class="container">
-                    <a href="#">
-                        <div class="box"><p>arctie.no</p></div>
-                    </a> 
-                    
-                    <div>
-
-                        <a href="#" class="collapse" aria-expanded="false" aria-controls="navAlign">
-                            <div class="box"><p>open</p></div>
-                        </a>
-
-                        <div class="align">
-
-                            <a href="#3D">
-                                <div class="box"><p>3d</p></div>
-                            </a>
-                            <a href="#2D">
-                                <div class="box"><p>2d</p></div>
-                            </a>
-                            <a href="Pages/scraps.html">
-                                <div class="box"><p>scraps</p></div>
-                            </a>
-                            <a href="#blog">
-                                <div class="box"><p>blog</p></div>
-                            </a>
-                            <a href="#contact">
-                                <div class="box"><p>contact</p></div>
-                            </a>
-                        </div>  
-                    </div>
-                    
-            </div>
-            <div class="divider"></div>
-        </div>
-
-        
-
-        <div class="hello_world">
-            <p>heya i'm fen</p> 
-            
-        </div>
-
-        <div class="downButton">
-            <a href="#3D" class="downButtonLink">
-                <svg width="100" height="87" viewBox="0 0 100 87" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M30 36L50 60L70 36" stroke="#828C9D" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" class="downButtonArrow"/>
-                </svg>
-            </a>
-        </div>
-
-        <div id="3D">
-            <div class="areaTitle">
-                <p>3d</p>
-            </div>
-            <div class="areaDescription">
-                <p>a selection of my 3d work, you can contact below for commision information and such! </p>
-            </div>            
-            <div class="portfolioLayout" id="three-Container">
-
-            </div>
-        </div>
-        <div id="2D">
-            <div class="areaTitle">
-                <p>2d</p>
-            </div>
-            <div class="areaDescription">
-                <p>a selection of my 2d work, you can contact below for commision information and such! </p>
-            </div>
-            <div class="portfolioLayout" id="two-Container">
-
-            </div>
-        </div>
-        <div id="blog" >
-            <div class="areaTitle"> 
-                <p>blog</p> 
-            </div>
-
-            <forum-preview
-                title="Web components for these forum previews!!"
-                author="fen"
-                replies="0"
-                date="Feb 6, 2026">
-                <div slot="description"> 
-                    <p>
-                        For this page i decided to use webComponents written in JS to create the layout and then i used some variables to fill it out, something that made it super easy to create all the details needed for the forum preview!! its kinda epic ngl
-                    </p>
-                    <p>
-                        only problem to be completely honest is that i have done things in a very sub optimal way, so it is a little trash, especially the part that creates these blog posts, cuz it is a static page so i have no way of uploading a piece of text to be shown in one of these posts, so i just write pure html for each of these litle boxes! its kinda wonk! 
-                    </p>
-                </div>
-            </forum-preview>
-        
-            
-            <forum-preview
-                title="Heyyaaa! welcome to my lil corner of the web :3"
-                
-                author="fen"
-                replies="0"
-                date="Feb 9, 2026" >
-                <div slot="description"> 
-                    <p>
-                        heyyaaa! i am fen, <br>
-                        this is my little wonky webpage where i will show off some of my 3d work and ill make some tutorials in these forum esque posts, they are very wonky right now as this page is static! 
-                    </p>
-                    <div class="portfolioLayout">
-                        <img src="Assets/Pictures/three/ORB1.png" alt="test" class="imgScale">
-                        <img src="Assets/Pictures/three/ORB3.png" alt="test" class="imgScale">
-                        <img src="Assets/Pictures/three/Tiles Render 1.png" alt="tiles" class="imgScale">
-                    </div>
-                    <p>
-                        these are some of my proc gen materials in blender! one is inspired by a proc gen brick shader i found, but idk where i found it! the other is a raymarcher! ()
-                    </p>
-                </div>
-            </forum-preview>
-            
-
-        </div>
-
-        <div id="contact">
-            <div class="areaTitle">
-                <p>socials</p>
-            </div>
-            <div class="contactStyling">
-                <a href="https://t.me/Arctie">
-                    <div class="contactItemStyling">
-                        <img src="Assets/Design/Telegram.svg" alt="">
-                        <p class="contactInfoText">Telegram</p>
-                    </div>
-                </a>
-                <!--
-                <a href="#">
-                    <div class="contactItemStyling">
-                        <img src="Assets/Design/Discord.svg" alt="">
-                        <p class="contactInfoText">Discord</p>
-                    </div>
-                </a>
-                -->
-                <a href="mailto:arctiemail@gmail.com">
-                    <div class="contactItemStyling">
-                        <img src="Assets/Design/Mail.svg" alt="">
-                        <p class="contactInfoText">Mail</p>
-                    </div>
-                </a>
-                
-                <a href="https://www.instagram.com/arctie_design">
-                    <div class="contactItemStyling">
-                        <img src="Assets/Design/Instagram.svg" alt="">
-                        <p class="contactInfoText">Instagram</p>
-                    </div>
-                </a>
-                <a href="https://bsky.app/profile/arctie.no">
-                    <div class="contactItemStyling">
-                        <img src="Assets/Design/Bluesky.svg" alt="">
-                        <p class="contactInfoText">Bluesky</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="dividerBot"></div>
         <div>
-            <p class="areaDescription">
-                <br>thanks for checking out my page :3<br><br><br>
-            </p>
+          <a
+            href="#"
+            class="collapse"
+            aria-expanded="false"
+            aria-controls="navAlign"
+          >
+            <div class="box"><p>open</p></div>
+          </a>
+
+          <div class="align">
+            <a href="#portfolio">
+              <div class="box"><p>Portfolio</p></div>
+            </a>
+            <a href="Pages/scraps.html">
+              <div class="box"><p>scraps</p></div>
+            </a>
+            <a href="#blog">
+              <div class="box"><p>blog</p></div>
+            </a>
+            <a href="#contact">
+              <div class="box"><p>contact</p></div>
+            </a>
+          </div>
         </div>
-        <script src="js/gallery_controller.js"></script>
-        <script src="js/forumComponent.js"></script>
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                var collapse = document.querySelector(".collapse");
-                var align = document.querySelector(".align");
-                var label = collapse.querySelector(".box p")
+      </div>
+      <div class="divider"></div>
+    </div>
 
-                if (!collapse || !align) return;
+    <div class="hello_world">
+      <p>heya i"m fen</p>
+    </div>
 
-                collapse.addEventListener("click", function (e) {
-                    e.preventDefault();
-                    
-                    align.classList.toggle("expanded");
-                    var expanded = align.classList.contains('expanded');
+    <div class="downButton">
+      <a href="#3D" class="downButtonLink">
+        <svg
+          width="100"
+          height="87"
+          viewBox="0 0 100 87"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M30 36L50 60L70 36"
+            stroke="#828C9D"
+            stroke-width="11"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="downButtonArrow"
+          />
+        </svg>
+      </a>
+    </div>
 
-                    collapse.setAttribute("aria-expanded", expanded);
-                    label.textContent = expanded ? "close" : "open" ;
-                });
-            });
-        </script>
+    <!----------------------------------------------------
+    PORTFOLIO (gets populated by Gallery_Controller)  
+    ----------------------------------------------------->
+    <div id="portfolio">
+      <div class="areaTitle">
+        <p>Portfolio</p>
+      </div>
+      <div class="ImagesContainer" data-category="models">
+        <div>
+          <p class="inPortfolioTitle">Models</p>
+          <p class="inPortfolioDescription">Models</p>
+        </div>
 
+        <div class="portfolioLayout"></div>
 
-    </body>
+        <div class="flex">
+          <p class="bylineReplies">by fen</p>
+          <p class="inPortfolioDate">feb 5, 2026</p>
+        </div>
+        <div class="divider"></div>
+      </div>
+
+      <div class="ImagesContainer" data-category="shaders">
+        <div>
+          <p class="inPortfolioTitle">Shaders</p>
+          <p class="inPortfolioDescription">
+            Experiments on procedural texturing in Blender,
+          </p>
+        </div>
+
+        <div class="portfolioLayout"></div>
+
+        <div class="flex">
+          <p class="bylineReplies">by fen</p>
+          <p class="inPortfolioDate">feb 5, 2026</p>
+        </div>
+        <div class="divider"></div>
+      </div>
+
+      <div class="ImagesContainer" data-category="raymarch">
+        <div>
+          <p class="inPortfolioTitle">Raymarching shaders</p>
+          <p class="inPortfolioDescription">
+            I did a bunch of experiments with shaders in Blender, particularily
+            with raymarched shaders, these are a few
+          </p>
+        </div>
+
+        <div class="portfolioLayout"></div>
+
+        <div class="flex">
+          <p class="bylineReplies">by fen</p>
+          <p class="inPortfolioDate">feb 5, 2026</p>
+        </div>
+        <div class="divider"></div>
+      </div>
+
+      <div class="ImagesContainer" data-category="mods">
+        <div>
+          <p class="inPortfolioTitle">Mods</p>
+          <p class="inPortfolioDescription">
+            Some models i made for mods for Hytale, made by hypixel studios,
+          </p>
+        </div>
+
+        <div class="portfolioLayout"></div>
+
+        <div class="flex">
+          <p class="bylineReplies">by fen</p>
+          <p class="inPortfolioDate">feb 5, 2026</p>
+        </div>
+        <div class="divider"></div>
+      </div>
+
+      <div class="ImagesContainer" data-category="art">
+        <div>
+          <p class="inPortfolioTitle">2d art</p>
+          <p class="inPortfolioDescription">
+            Some 2d Art i did, alot of these are ooold! but they are cool i
+            think :3
+          </p>
+        </div>
+
+        <div class="portfolioLayout"></div>
+
+        <div class="flex">
+          <p class="bylineReplies">by fen</p>
+          <p class="inPortfolioDate">feb 5, 2026</p>
+        </div>
+        <div class="divider"></div>
+      </div>
+    </div>
+
+    <!----------------------------------------------------
+    Blog (gets populated with Forum Component) 
+    ----------------------------------------------------->
+    <div id="blog">
+      <div class="areaTitle">
+        <p>blog</p>
+      </div>
+
+      <forum-preview
+        title="Web components for these forum previews!!"
+        author="fen"
+        replies="0"
+        date="Feb 6, 2026"
+      >
+        <div slot="description">
+          <p>
+            For this page i decided to use webComponents written in JS to create
+            the layout and then i used some variables to fill it out, something
+            that made it super easy to create all the details needed for the
+            forum preview!! its kinda epic ngl
+          </p>
+          <p>
+            only problem to be completely honest is that i have done things in a
+            very sub optimal way, so it is a little trash, especially the part
+            that creates these blog posts, cuz it is a static page so i have no
+            way of uploading a piece of text to be shown in one of these posts,
+            so i just write pure html for each of these litle boxes! its kinda
+            wonk!
+          </p>
+        </div>
+      </forum-preview>
+
+      <forum-preview
+        title="Heyyaaa! welcome to my lil corner of the web :3"
+        author="fen"
+        replies="0"
+        date="Feb 9, 2026"
+      >
+        <div slot="description">
+          <p>
+            heyyaaa! i am fen, <br />
+            this is my little wonky webpage where i will show off some of my 3d
+            work and ill make some tutorials in these forum esque posts, they
+            are very wonky right now as this page is static!
+          </p>
+          <div class="portfolioLayout">
+            <img
+              src="Assets/Pictures/three/ORB1.png"
+              alt="test"
+              class="imgScale"
+            />
+            <img
+              src="Assets/Pictures/three/ORB3.png"
+              alt="test"
+              class="imgScale"
+            />
+            <img
+              src="Assets/Pictures/three/Tiles Render 1.png"
+              alt="tiles"
+              class="imgScale"
+            />
+          </div>
+          <p>
+            these are some of my proc gen materials in blender! one is inspired
+            by a proc gen brick shader i found, but idk where i found it! the
+            other is a raymarcher! ()
+          </p>
+        </div>
+      </forum-preview>
+    </div>
+
+    <!----------------------------------------------------
+    Contact me area
+    ----------------------------------------------------->
+
+    <div id="contact">
+      <div class="areaTitle">
+        <p>socials</p>
+      </div>
+      <div class="contactStyling">
+        <a href="https://t.me/Arctie">
+          <div class="contactItemStyling">
+            <img src="Assets/Design/Telegram.svg" alt="" />
+            <p class="contactInfoText">Telegram</p>
+          </div>
+        </a>
+        <a href="mailto:arctiemail@gmail.com">
+          <div class="contactItemStyling">
+            <img src="Assets/Design/Mail.svg" alt="" />
+            <p class="contactInfoText">Mail</p>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/arctie_design">
+          <div class="contactItemStyling">
+            <img src="Assets/Design/Instagram.svg" alt="" />
+            <p class="contactInfoText">Instagram</p>
+          </div>
+        </a>
+        <a href="https://bsky.app/profile/arctie.no">
+          <div class="contactItemStyling">
+            <img src="Assets/Design/Bluesky.svg" alt="" />
+            <p class="contactInfoText">Bluesky</p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="dividerBot"></div>
+    <div>
+      <p class="areaDescription">
+        <br />thanks for checking out my page :3<br /><br /><br />
+      </p>
+    </div>
+    <script src="js/gallery_controller.js"></script>
+    <script src="js/forumComponent.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var collapse = document.querySelector(".collapse");
+        var align = document.querySelector(".align");
+        var label = collapse.querySelector(".box p");
+
+        if (!collapse || !align) return;
+
+        collapse.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          align.classList.toggle("expanded");
+          var expanded = align.classList.contains("expanded");
+
+          collapse.setAttribute("aria-expanded", expanded);
+          label.textContent = expanded ? "close" : "open";
+        });
+      });
+    </script>
+  </body>
 </html>

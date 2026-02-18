@@ -1,13 +1,12 @@
 class ForumPreview extends HTMLElement {
+  static get observedAttributes() {
+    return ["title", "author", "replies", "date"];
+  }
 
-    static get observedAttributes() {
-        return ['title', 'author', 'replies', 'date'];
-    }
-
-    constructor() {
-        super();
-        this.attachShadow({ mode: "open" }); //forum css should exist here! 
-        this.shadowRoot.innerHTML = `
+  constructor() {
+    super();
+    this.attachShadow({ mode: "open" }); //forum css should exist here!
+    this.shadowRoot.innerHTML = `
             <style>
                              
                 #forum {
@@ -137,26 +136,26 @@ class ForumPreview extends HTMLElement {
 
             </div>
         `;
-    }
+  }
 
-    connectedCallback() {
-        this.update();
-    }
+  connectedCallback() {
+    this.update();
+  }
 
-    attributeChangedCallback() {
-        this.update();
-    }
+  attributeChangedCallback() {
+    this.update();
+  }
 
-    update() {
-        this.shadowRoot.querySelector(".inForumTitle").textContent =
-            this.getAttribute("title") || "";
+  update() {
+    this.shadowRoot.querySelector(".inForumTitle").textContent =
+      this.getAttribute("title") || "";
 
-        this.shadowRoot.querySelector(".byline").textContent =
-            `By ${this.getAttribute("author") || ""}`;
+    this.shadowRoot.querySelector(".byline").textContent =
+      `By ${this.getAttribute("author") || ""}`;
 
-        this.shadowRoot.querySelector(".inForumDate").textContent =
-            this.getAttribute("date") || "";
-    }
+    this.shadowRoot.querySelector(".inForumDate").textContent =
+      this.getAttribute("date") || "";
+  }
 }
 
 customElements.define("forum-preview", ForumPreview);
