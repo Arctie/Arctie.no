@@ -3,43 +3,43 @@
 const Images = [
   // MODELS
   {
-    src: "/Assets/Pictures/three/ModelShowcase1.png",
+    src: "./Assets/Pictures/three/ModelShowcase1.png",
     alt: "model",
     category: "models",
   },
   {
-    src: "/Assets/Pictures/three/GOOBMENISTERp2.png",
+    src: "./Assets/Pictures/three/GOOBMENISTERp2.png",
     alt: "model closeup",
     category: "models",
   },
   // SHADERS
   {
-    src: "/Assets/Pictures/three/ORB1.png",
+    src: "./Assets/Pictures/three/ORB1.png",
     alt: "orb",
     category: "shaders",
   },
   {
-    src: "/Assets/Pictures/three/Render 1.png",
+    src: "./Assets/Pictures/three/Render 1.png",
     alt: "Render 1",
     category: "shaders",
   },
   {
-    src: "/Assets/Pictures/three/Render 2.png",
+    src: "./Assets/Pictures/three/Render 2.png",
     alt: "Render 2",
     category: "shaders",
   },
   {
-    src: "/Assets/Pictures/three/ORB2.png",
+    src: "./Assets/Pictures/three/ORB2.png",
     alt: "orb",
     category: "shaders",
   },
   {
-    src: "/Assets/Pictures/three/Tiles Render 1.png",
+    src: "./Assets/Pictures/three/Tiles Render 1.png",
     alt: "Tiles Render 1",
     category: "shaders",
   },
   {
-    src: "/Assets/Pictures/three/Tiles Render 4.png",
+    src: "./Assets/Pictures/three/Tiles Render 4.png",
     alt: "Tiles Render 4",
     category: "shaders",
   },
