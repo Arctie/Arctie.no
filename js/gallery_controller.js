@@ -46,76 +46,76 @@ const Images = [
 
   // RAYMARCH
   {
-    src: "/Assets/Pictures/three/ORB3.png",
+    src: "./Assets/Pictures/three/ORB3.png",
     alt: "orb",
     category: "raymarch",
   },
   {
-    src: "/Assets/Pictures/three/ORB4.png",
+    src: "./Assets/Pictures/three/ORB4.png",
     alt: "orb",
     category: "raymarch",
   },
   {
-    src: "/Assets/Pictures/three/ORB5.png",
+    src: "./Assets/Pictures/three/ORB5.png",
     alt: "orb",
     category: "raymarch",
   },
 
   // MODS
   {
-    src: "/Assets/Pictures/three/Bag.png",
+    src: "./Assets/Pictures/three/Bag.png",
     alt: "Bag",
     category: "mods",
   },
   {
-    src: "/Assets/Pictures/three/Heart.png",
+    src: "./Assets/Pictures/three/Heart.png",
     alt: "Heart",
     category: "mods",
   },
   {
-    src: "/Assets/Pictures/three/Hermes.png",
+    src: "./Assets/Pictures/three/Hermes.png",
     alt: "Hermes",
     category: "mods",
   },
   {
-    src: "/Assets/Pictures/three/Lava Charm.png",
+    src: "./Assets/Pictures/three/Lava Charm.png",
     alt: "Lava Charm",
     category: "mods",
   },
   {
-    src: "/Assets/Pictures/three/Mirror.png",
+    src: "./Assets/Pictures/three/Mirror.png",
     alt: "Magic Mirror",
     category: "mods",
   },
   {
-    src: "/Assets/Pictures/three/Tinkerers.png",
+    src: "./Assets/Pictures/three/Tinkerers.png",
     alt: "Tinkerers Table",
     category: "mods",
   },
 
   // ART
   {
-    src: "/Assets/Pictures/two/Dergonpanceek.png",
+    src: "./Assets/Pictures/two/Dergonpanceek.png",
     alt: "art",
     category: "art",
   },
   {
-    src: "/Assets/Pictures/two/KeyniFinal.png",
+    src: "./Assets/Pictures/two/KeyniFinal.png",
     alt: "art",
     category: "art",
   },
   {
-    src: "/Assets/Pictures/two/kipp chickenrun child.png",
+    src: "./Assets/Pictures/two/kipp chickenrun child.png",
     alt: "art",
     category: "art",
   },
   {
-    src: "/Assets/Pictures/two/Kipp Kunstrulett.png",
+    src: "./Assets/Pictures/two/Kipp Kunstrulett.png",
     alt: "art",
     category: "art",
   },
   {
-    src: "/Assets/Pictures/two/Pepe Sunset.png",
+    src: "./Assets/Pictures/two/Pepe Sunset.png",
     alt: "art",
     category: "art",
   },
