@@ -1,7 +1,7 @@
 //populate as you add more to the Pictures folder! alt is alt text
 
 const Images = [
-  // MODELS
+  // MODELS 
   {
     src: "./Assets/Pictures/three/ModelShowcase1.png",
     alt: "model",
@@ -12,7 +12,7 @@ const Images = [
     alt: "model closeup",
     category: "models",
   },
-  // SHADERS
+  // SHADERS AND PROC GEN MATERIALS
   {
     src: "./Assets/Pictures/three/ORB1.png",
     alt: "orb",
@@ -44,7 +44,7 @@ const Images = [
     category: "shaders",
   },
 
-  // RAYMARCH
+  // RAYMARCHING SHADERS
   {
     src: "./Assets/Pictures/three/ORB3.png",
     alt: "orb",
@@ -61,7 +61,7 @@ const Images = [
     category: "raymarch",
   },
 
-  // MODS
+  // HYTALE MOD ASSETS
   {
     src: "./Assets/Pictures/three/Bag.png",
     alt: "Bag",
@@ -92,8 +92,11 @@ const Images = [
     alt: "Tinkerers Table",
     category: "mods",
   },
+  // NOBLE NIGHTS
+  // should set up a good way to showcase my assets and shaders made for noble nights! idk how i want to do it though.
 
-  // ART
+  
+  // 2D ARTWORK
   {
     src: "./Assets/Pictures/two/Dergonpanceek.png",
     alt: "art",
