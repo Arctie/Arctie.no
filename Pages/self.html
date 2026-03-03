@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <a href="../index.html">
+          <div class="box">
+            <p>arctie.no</p>
+          </div>
+        </a>
+
+        <div>
+          <a
+            href="#"
+            class="collapse"
+            aria-expanded="false"
+            aria-controls="navAlign"
+          >
+            <div class="box">
+              <p>open</p>
+            </div>
+          </a>
+
+          <div class="align">
+            <a href="../index.html#portfolio">
+              <div class="box">
+                <p>portfolio</p>
+              </div>
+            </a>
+            <!-- Add back when scraps page is done :3
+            <a href="Pages/scraps.html">
+              <div class="box"><p>scraps</p></div>
+            </a>
+            -->
+            <a href="../index.html#blog">
+              <div class="box">
+                <p>blog</p>
+              </div>
+            </a>
+            <a href="../pages/self.html">
+              <div class="box">
+                <p>me</p>
+              </div>
+            </a>
+            <a href="../pages/playground.html">
+              <div class="box">
+                <p>playground</p>
+              </div>
+            </a>
+            <a href="../index.html#contact">
+              <div class="box">
+                <p>contact</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="divider"></div>
+    </div>
+    <div class="experienceAlign">
+      <div class="experience">
+        <p class="inExperienceDescription">
+          Heyyaaa! Im fen! <br />
+          <br />
+          im a digital artist, 3d generalist, and tech artist. <br />
+          i love working with procedural materials and textures, and i have a
+          huge fascination with shaders and scripting artwork! <br />
+          Im currently focusing alot on raymarching and SDF modelling <br />
+          <br />
+          A great tool for this is the GLSL shader editor! which conveniently is built on this page! just go to the playground page!!!!
+        </p>
+        <p class="inExperienceDescription">
+          ill add more here later i think! but thanks for reading about me!
+        </p>
+      </div>
+      <div class="verticalDivider"></div>
+      
+      <!--
+      <div class="experience">
+        <p class="inExperienceDescription">work experience</p>
+      </div>
+      -->
+    </div>
+    
+    <!----------------------------------------------------
+    Contact me area
+    ----------------------------------------------------->
+
+    <div id="contact">
+      <div class="areaTitle">
+        <p>socials</p>
+      </div>
+      <div class="contactStyling">
+        <a href="https://t.me/Arctie">
+          <div class="contactItemStyling">
+            <img src="../Assets/Design/Telegram.svg" alt="" />
+            <p class="contactInfoText">Telegram</p>
+          </div>
+        </a>
+        <a href="mailto:arctiemail@gmail.com">
+          <div class="contactItemStyling">
+            <img src="../Assets/Design/Mail.svg" alt="" />
+            <p class="contactInfoText">Mail</p>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/arctie_design">
+          <div class="contactItemStyling">
+            <img src="../Assets/Design/Instagram.svg" alt="" />
+            <p class="contactInfoText">Instagram</p>
+          </div>
+        </a>
+        <a href="https://bsky.app/profile/arctie.no">
+          <div class="contactItemStyling">
+            <img src="../Assets/Design/Bluesky.svg" alt="" />
+            <p class="contactInfoText">Bluesky</p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="dividerBot"></div>
+    <div>
+      <p class="areaDescription">
+        <br />thanks for checking out my page :3<br /><br /><br />
+      </p>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var collapse = document.querySelector(".collapse");
+        var align = document.querySelector(".align");
+        var label = collapse.querySelector(".box p");
+
+        if (!collapse || !align) return;
+
+        collapse.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          align.classList.toggle("expanded");
+          var expanded = align.classList.contains("expanded");
+
+          collapse.setAttribute("aria-expanded", expanded);
+          label.textContent = expanded ? "close" : "open";
+        });
+      });
+    </script>
+  </body>
+</html>

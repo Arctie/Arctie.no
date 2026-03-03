@@ -15,6 +15,29 @@ body {
   font-family: "Martian Mono", Roboto, sans-serif;
   color: var(--muted);
 }
+
+#glsl_editor {
+  margin-top: 4.5rem;
+  height: 200%;
+  width: 100%;
+}
+#glsl_editor .ge_editor {
+  background: var(--bg); /* or any color */
+}
+#glsl_editor .CodeMirror-gutters {
+  background: var(--bg) !important;
+  border-right: 1px solid var(--panel);
+}
+
+#glsl_editor .CodeMirror {
+  background: var(--bg) ;
+}
+
+#glsl_editor canvas {
+  margin-right: 4rem;
+  margin-top: 6rem;
+}
+
 .header {
   position: fixed;
   padding-top: 0.5rem;
@@ -50,6 +73,23 @@ body {
   background: var(--panel);
   color: #fffcbe;
 }
+.inlineButton {
+  background: var(--bg);
+  border-bottom: 0.5px solid #666877;
+  width: fit-content;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #9aa6b9;
+  gap: 10px;
+  padding: 0.1em 2em 0.1em;
+  margin: 1rem;
+  border-radius: 2rem;
+}
+
+.inlineButton:hover {
+  background: var(--panel);
+  color: #fffcbe;
+}
 
 .divider {
   margin: 0.5rem 0px 0px;
@@ -57,6 +97,14 @@ body {
   background: linear-gradient(to right, transparent, #fff, transparent);
   opacity: 0.2;
 }
+
+.verticalDivider{
+  margin: 0px 0.5rem 0px;
+  width: 1px;
+  background: linear-gradient(to bottom, transparent, #fff, transparent);
+  opacity: 0.2;
+}
+
 .dividerBot {
   margin: 2rem 0px 0px;
   height: 1px;
@@ -82,14 +130,7 @@ body {
   max-width: max-content;
 }
 
-canvas {
-  display: block;
-  inset: 0;
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-}
+
 
 .areaTitle {
   display: flex;
@@ -162,14 +203,16 @@ canvas {
 }
 
 .inPortfolioTitle,
-.inForumTitle {
+.inForumTitle,
+.inExperienceTitle {
   color: #9aa6b9;
   font-size: 2.2rem;
   font-weight: 400;
   margin: 1rem;
 }
 .inPortfolioDescription,
-.inForumDescription {
+.inForumDescription,
+.inExperienceDescription {
   font-size: 1rem;
   font-weight: 300;
   color: #828c9d;
@@ -231,6 +274,40 @@ canvas {
   display: block;
   color: var(--muted);
 }
+
+/*SELF*/
+
+.experienceAlign {
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  margin-top: 5rem;
+
+}
+.experience {
+  width: 40rem;
+  
+}
+.inExperienceArea {
+  margin-left: auto;
+  white-space: nowrap;
+  text-align: right;
+  color: #667988;
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*mobile*/
 @media (max-width: 768px) {

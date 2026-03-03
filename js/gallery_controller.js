@@ -97,6 +97,17 @@ const Images = [
 
   
   // 2D ARTWORK
+  
+  {
+    src: "./Assets/Pictures/two/dani garf rulett.png",
+    alt: "art",
+    category: "art",
+  },  
+  {
+    src: "./Assets/Pictures/two/Painting Example.png",
+    alt: "art",
+    category: "art",
+  },
   {
     src: "./Assets/Pictures/two/Dergonpanceek.png",
     alt: "art",
@@ -122,6 +133,7 @@ const Images = [
     alt: "art",
     category: "art",
   },
+
 ];
 
 
