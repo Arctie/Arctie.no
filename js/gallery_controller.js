@@ -1,80 +1,85 @@
 //populate as you add more to the Pictures folder! alt is alt text
 
 const Images = [
-  // MODELS 
+  // MODELS
   {
     src: "./Assets/Pictures/three/ModelShowcase1.png",
-    alt: "model",
+    alt: "personal model of one of my characters",
     category: "models",
   },
   {
     src: "./Assets/Pictures/three/GOOBMENISTERp2.png",
-    alt: "model closeup",
+    alt: "closeup of that model lol",
+    category: "models",
+  },
+  {
+    src: "./Assets/Pictures/three/lookdev_render_Secondary.png",
+    alt: "one of my exams",
     category: "models",
   },
   // SHADERS AND PROC GEN MATERIALS
   {
     src: "./Assets/Pictures/three/ORB1.png",
-    alt: "orb",
+    alt: "orb with a procedural brick texture i made in blender using nodes :3",
     category: "shaders",
   },
   {
     src: "./Assets/Pictures/three/Render 1.png",
-    alt: "Render 1",
+    alt: "procedural brick texture i made in blender using nodes :3",
     category: "shaders",
   },
   {
     src: "./Assets/Pictures/three/Render 2.png",
-    alt: "Render 2",
+    alt: "another render of that proc gen brick tex :3",
     category: "shaders",
   },
   {
     src: "./Assets/Pictures/three/ORB2.png",
-    alt: "orb",
+    alt: "Proc gen sandstone tiles",
     category: "shaders",
   },
   {
     src: "./Assets/Pictures/three/Tiles Render 1.png",
-    alt: "Tiles Render 1",
+    alt: "More proc gen sandstone tiles lol",
     category: "shaders",
   },
   {
     src: "./Assets/Pictures/three/Tiles Render 4.png",
-    alt: "Tiles Render 4",
+    alt: "Even more tiles",
     category: "shaders",
   },
 
   // RAYMARCHING SHADERS
   {
     src: "./Assets/Pictures/three/ORB3.png",
-    alt: "orb",
+    alt: "these are raymarched shaders, idk how to explain them, they break my mind but i love working with them, check out Azra Reyes on youtube :3",
     category: "raymarch",
   },
   {
     src: "./Assets/Pictures/three/ORB4.png",
-    alt: "orb",
+    alt: "these are raymarched shaders, idk how to explain them, they break my mind but i love working with them, check out Azra Reyes on youtube :3",
     category: "raymarch",
   },
   {
     src: "./Assets/Pictures/three/ORB5.png",
-    alt: "orb",
+    alt: "these are raymarched shaders, idk how to explain them, they break my mind but i love working with them, check out Azra Reyes on youtube :3",
     category: "raymarch",
   },
 
   // HYTALE MOD ASSETS
   {
     src: "./Assets/Pictures/three/Bag.png",
-    alt: "Bag",
+    alt: "Void bag, holds stuff lol",
     category: "mods",
   },
   {
     src: "./Assets/Pictures/three/Heart.png",
-    alt: "Heart",
+    alt: "Life crystal, was fun to make this in 3d as it looks nothing like the original heart crystal in terraria lol",
     category: "mods",
   },
   {
     src: "./Assets/Pictures/three/Hermes.png",
-    alt: "Hermes",
+    alt: "Hermes boots, make you run fast",
     category: "mods",
   },
   {
@@ -84,63 +89,62 @@ const Images = [
   },
   {
     src: "./Assets/Pictures/three/Mirror.png",
-    alt: "Magic Mirror",
+    alt: "Magic Mirror, teleport home (u have no reflection ur a vampire lol)",
     category: "mods",
   },
   {
     src: "./Assets/Pictures/three/Tinkerers.png",
-    alt: "Tinkerers Table",
+    alt: "Tinkerers Table, was the most complex model i made for this mod, but was fun! im proud of it",
     category: "mods",
   },
   // NOBLE NIGHTS
   // should set up a good way to showcase my assets and shaders made for noble nights! idk how i want to do it though.
 
-  
   // 2D ARTWORK
-  
+
   {
     src: "./Assets/Pictures/two/dani garf rulett.png",
-    alt: "art",
+    alt: "Gift art for a friend",
     category: "art",
-  },  
+  },
   {
     src: "./Assets/Pictures/two/Painting Example.png",
-    alt: "art",
+    alt: "looks cold in the snow ngl, but i think they are chillin",
     category: "art",
   },
   {
     src: "./Assets/Pictures/two/Dergonpanceek.png",
-    alt: "art",
+    alt: "OOOLLLLDDDD",
     category: "art",
   },
   {
     src: "./Assets/Pictures/two/KeyniFinal.png",
-    alt: "art",
+    alt: "gift arts :3",
     category: "art",
   },
   {
     src: "./Assets/Pictures/two/kipp chickenrun child.png",
-    alt: "art",
+    alt: "idk",
     category: "art",
   },
   {
     src: "./Assets/Pictures/two/Kipp Kunstrulett.png",
-    alt: "art",
+    alt: "hehe bird painting",
     category: "art",
   },
   {
     src: "./Assets/Pictures/two/Pepe Sunset.png",
-    alt: "art",
+    alt: "pepe contemplates life (which is fair ngl)",
     category: "art",
   },
-
 ];
-
-
 
 function populateCategories() {
   const containers = document.querySelectorAll(".ImagesContainer");
 
+  const tooltip = document.createElement("div");
+  tooltip.id = "image-tooltip";
+  document.body.appendChild(tooltip);
   containers.forEach((container) => {
     const category = container.dataset.category;
     const itemsContainer = container.querySelector(".portfolioLayout");
@@ -152,7 +156,19 @@ function populateCategories() {
       const img = document.createElement("img");
       img.src = imgData.src;
       img.alt = imgData.alt;
+      img.addEventListener("mouseenter", () => {
+        tooltip.textContent = imgData.alt;
+        tooltip.style.display = "block";
+      });
 
+      img.addEventListener("mousemove", (e) => {
+        tooltip.style.left = e.pageX + 2 + "px";
+        tooltip.style.top = e.pageY + 2 + "px";S
+      });
+
+      img.addEventListener("mouseleave", () => {
+        tooltip.style.display = "none";
+      });
       wrapper.appendChild(img);
       itemsContainer.appendChild(wrapper);
     });

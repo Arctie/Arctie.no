@@ -178,8 +178,25 @@ body {
   object-fit: cover;
   padding: 0.1rem;
   border-radius: 2rem;
+  cursor: crosshair;
 }
+.portfolioItem img:hover{
+  filter: brightness(1.1);
+  transition: filter 0.3s ease;
+  border-color:#9aa6b9;
+}
+#image-tooltip {
+  position: absolute;
+  display: none;
+  background: #3a414d;
+  padding: 8px 12px;
+  max-width: 30em;
+  border-radius: 2rem;
+  pointer-events: none; 
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 
+}
 #forum {
   display: flex;
   flex-direction: column;
