@@ -162,8 +162,8 @@ function populateCategories() {
       });
 
       img.addEventListener("mousemove", (e) => {
-        tooltip.style.left = e.pageX + 2 + "px";
-        tooltip.style.top = e.pageY + 2 + "px";S
+        tooltip.style.left = e.pageX + 0 + "px";
+        tooltip.style.top = e.pageY + 0 + "px";S
       });
 
       img.addEventListener("mouseleave", () => {

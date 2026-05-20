@@ -178,7 +178,7 @@ body {
   object-fit: cover;
   padding: 0.1rem;
   border-radius: 2rem;
-  cursor: crosshair;
+  cursor: none;
 }
 .portfolioItem img:hover{
   filter: brightness(1.1);
@@ -191,11 +191,10 @@ body {
   background: #3a414d;
   padding: 8px 12px;
   max-width: 30em;
-  border-radius: 2rem;
+  border-radius: 0rem 2rem 2rem 2rem;
   pointer-events: none; 
   z-index: 1000;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-
 }
 #forum {
   display: flex;
@@ -329,6 +328,10 @@ body {
 /*mobile*/
 @media (max-width: 768px) {
   /* collapsed by default on mobile; toggled by JS via .expanded */
+  .hide_on_mobile{
+    display: none;
+  }
+  
   .align {
     display: none;
   }
