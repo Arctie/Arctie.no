@@ -296,13 +296,11 @@ body {
 .experienceAlign {
   display: flex;
   flex-direction: row;
-  justify-self: center;
+  justify-content: center;
   margin-top: 5rem;
-
 }
 .experience {
   width: 40rem;
-  
 }
 .inExperienceArea {
   margin-left: auto;
